@@ -1,90 +1,3 @@
-# Octra Public Testnet
-
-![testnet](https://github.com/user-attachments/assets/aa4f05f1-0f0a-41d0-8ed8-df215b340c46)
-
-## Join Discord
-https://discord.gg/octra
-
----
-
-## Requirements
-Linux Ubuntu OS
-* **VPS**: You can use a linux VPS to follow the guide
-* **Windows**: Install Linux Ubuntu using WSL by following this [guide](https://github.com/0xmoei/Install-Linux-on-Windows)
-* **Codespace**: If you don't have VPS or Windows WSL, you can use [Github Codespace](https://github.com/codespaces), create a blank template and run your codes.
-
----
-
-## Install dependecies
-Install & Update Packages:
-```
-sudo apt update && sudo apt upgrade -y
-sudo apt install screen curl iptables build-essential git wget lz4 jq make gcc nano automake autoconf tmux htop nvme-cli libgbm1 pkg-config libssl-dev libleveldb-dev tar clang bsdmainutils ncdu unzip libleveldb-dev  -y
-```
-Install Nodejs (Only VPS users)
-```
-sudo apt update
-sudo curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
-sudo apt install -y nodejs
-node -v
-npm install -g yarn
-yarn -v
-```
-
----
-
-## Create wallet
-### 1. Clone the repository
-   ```bash
-   git clone https://github.com/0xmoei/wallet-gen.git
-   cd wallet-gen
-   ```
-
-### 2. Run the wallet generator webserver
-   **Linux/macOS:**
-   ```bash
-   chmod +x ./start.sh
-   ./start.sh
-   ```
-
-
-### 3. Open your browser
-* **WSL/Linux/MAC users:**
-  * Navigate to `http://localhost:8888` on browser
-
-  
-* **VPS users:**
-  * 1- Open a new terminal
-  * 2- Install **localtunnel**:
-    ```
-    npm install -g localtunnel
-    ```
-  * 3- Get a password:
-    ```
-    curl https://loca.lt/mytunnelpassword
-    ```
-  * The password is actually your VPS IP
-  * 4- Get URL
-    ```
-    lt --port 8888
-    ```
-  * Visit the prompted url, and enter your password to access wallet generator page
-
-### 4. Generate wallet
-* Click "GENERATE NEW WALLET" and watch the real-time progress
-* Save all the details of your Wallet
-
----
-
-## Get Faucet
-* Visit [Faucet page](https://faucet.octra.network/)
-* Enter your address starting with `oct...` to get faucet
-
-![image](https://github.com/user-attachments/assets/18597b40-eaad-434f-a026-cc4a56a6d1a8)
-
----
-## Task 1: Send transactions
-
 **1. Install Python**
 ```bash
 sudo apt install python3 python3-pip python3-venv python3-dev -y
@@ -107,10 +20,72 @@ cp wallet.json.example wallet.json
 nano wallet.json
 ```
 * Replace following values:
-  * `private-key-here`: Privatekey with `B64` format
-  * `octxxxxxxxx...`: Octra address starting with `oct...`
+  "{
+  "wallets": [
+    {
+      "name": "Wallet1",
+      "priv": "private_key_1",
+      "addr": "octA1234567890123456789012345678901234567890",
+      "rpc": "https://octra.network"
+    },
+    {
+      "name": "Wallet2",
+      "priv": "private_key_2",
+      "addr": "octB9876543210987654321098765432109876543210",
+      "rpc": "https://octra.network"
+    },
+    {
+      "name": "Wallet3",
+      "priv": "private_key_3",
+      "addr": "octC1234567890123456789012345678901234567890",
+      "rpc": "https://octra.network"
+    },
+    {
+      "name": "Wallet4",
+      "priv": "private_key_4",
+      "addr": "octD9876543210987654321098765432109876543210",
+      "rpc": "https://octra.network"
+    },
+    {
+      "name": "Wallet5",
+      "priv": "private_key_5",
+      "addr": "octE1234567890123456789012345678901234567890",
+      "rpc": "https://octra.network"
+    },
+    {
+      "name": "Wallet6",
+      "priv": "private_key_6",
+      "addr": "octF9876543210987654321098765432109876543210",
+      "rpc": "https://octra.network"
+    },
+    {
+      "name": "Wallet7",
+      "priv": "private_key_7",
+      "addr": "octG1234567890123456789012345678901234567890",
+      "rpc": "https://octra.network"
+    },
+    {
+      "name": "Wallet8",
+      "priv": "private_key_8",
+      "addr": "octH9876543210987654321098765432109876543210",
+      "rpc": "https://octra.network"
+    },
+    {
+      "name": "Wallet9",
+      "priv": "private_key_9",
+      "addr": "octI1234567890123456789012345678901234567890",
+      "rpc": "https://octra.network"
+    },
+    {
+      "name": "Wallet10",
+      "priv": "private_key_10",
+      "addr": "octJ9876543210987654321098765432109876543210",
+      "rpc": "https://octra.network"
+    }
+  ]
 
-
+**add wallet.txt**
+addres per lane
 **3. Start CLI**
 ```bash
 python3 -m venv venv
