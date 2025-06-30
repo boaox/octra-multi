@@ -20,16 +20,7 @@ cp wallet.json.example wallet.json
 nano wallet.json
 ```
 * Replace following values:
-  "{
-  "wallets": [
-    {
-      "name": "Wallet1",
-      "priv": "private_key_1",
-      "addr": "octA1234567890123456789012345678901234567890",
-      "rpc": "https://octra.network"
-    }
-]
-}"
+ 
 **add wallet.txt**
 addres per lane
 **3. Start CLI**
