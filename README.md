@@ -23,6 +23,8 @@ nano wallet.json
  
 **add wallet.txt**
 addres per lane
+
+
 **3. Start CLI**
 ```bash
 python3 -m venv venv
