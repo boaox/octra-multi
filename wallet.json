@@ -1,0 +1,64 @@
+{
+  "wallets": [
+    {
+      "name": "Wallet1",
+      "priv": "private_key_1",
+      "addr": "octA1234567890123456789012345678901234567890",
+      "rpc": "https://octra.network"
+    },
+    {
+      "name": "Wallet2",
+      "priv": "private_key_2",
+      "addr": "octB9876543210987654321098765432109876543210",
+      "rpc": "https://octra.network"
+    },
+    {
+      "name": "Wallet3",
+      "priv": "private_key_3",
+      "addr": "octC1234567890123456789012345678901234567890",
+      "rpc": "https://octra.network"
+    },
+    {
+      "name": "Wallet4",
+      "priv": "private_key_4",
+      "addr": "octD9876543210987654321098765432109876543210",
+      "rpc": "https://octra.network"
+    },
+    {
+      "name": "Wallet5",
+      "priv": "private_key_5",
+      "addr": "octE1234567890123456789012345678901234567890",
+      "rpc": "https://octra.network"
+    },
+    {
+      "name": "Wallet6",
+      "priv": "private_key_6",
+      "addr": "octF9876543210987654321098765432109876543210",
+      "rpc": "https://octra.network"
+    },
+    {
+      "name": "Wallet7",
+      "priv": "private_key_7",
+      "addr": "octG1234567890123456789012345678901234567890",
+      "rpc": "https://octra.network"
+    },
+    {
+      "name": "Wallet8",
+      "priv": "private_key_8",
+      "addr": "octH9876543210987654321098765432109876543210",
+      "rpc": "https://octra.network"
+    },
+    {
+      "name": "Wallet9",
+      "priv": "private_key_9",
+      "addr": "octI1234567890123456789012345678901234567890",
+      "rpc": "https://octra.network"
+    },
+    {
+      "name": "Wallet10",
+      "priv": "private_key_10",
+      "addr": "octJ9876543210987654321098765432109876543210",
+      "rpc": "https://octra.network"
+    }
+  ]
+}
